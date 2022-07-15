@@ -1,0 +1,148 @@
+.home-background {
+  background-image: url("https://forms.office.com/Images/Theme/meeting.png");
+  margin: 0px;
+  /* height: auto; */
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+h1 {
+  margin-top: 0px;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #c9b4de;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad, 1px 2px 0px #957dad, 1px 3px 0px #957dad,
+    1px 4px 0px #957dad, 1px 5px 0px #957dad, 1px 6px 0px #957dad,
+    1px 10px 5px rgba(16, 16, 16, 0.5), 1px 15px 10px rgba(16, 16, 16, 0.4),
+    1px 20px 30px rgba(16, 16, 16, 0.3), 1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+.heading-follow {
+  font-size: 50px;
+  font-weight: 500;
+  color: #c375d0;
+  width: 600px;
+  margin: auto;
+  animation: cursor 1s infinite step-end;
+  border-right: 4px solid #000;
+  margin-top: 20vh;
+  /* I was not able to move this in middle  */
+}
+@keyframes cursor {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+.buttons {
+  margin-top: 10vh;
+}
+.button-home {
+  /* padding: 30px; */
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 15px 28px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin: 30px;
+}
+.no-page {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  background-image: url("https://www.argildx.com/wp-content/uploads/2017/06/Is-a-Misconfigured-%E2%80%9CPage-Not-Found%E2%80%9D-Jeopardizing-Your-Website.jpg");
+}
+
+h2 {
+  margin: 0;
+  /*margin: 1em 0 0.5em 0; */
+  color: #fcfcfc;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 40px;
+  font-family: "Orienta", sans-serif;
+  text-shadow: none;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 100vw;   */
+  height: 100vh;
+  text-align: center;
+  background-image: url("https://ssgnet.com/wp-content/uploads/2015/09/blue-red-background.jpg");
+}
+.form .button-home {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 18px;
+  margin: auto;
+}
+input {
+  padding: 3px;
+  border-color: palevioletred;
+  border-radius: 6px;
+  height: 1em;
+  align-self: center;
+  width: 100%;
+}
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  /* grid-template-columns: auto auto; */
+  /* gap: 20px 150px; */
+}
+h3 {
+  text-align: left;
+  color: #ffffff;
+  margin: 5px;
+  font-size: 15px;
+}
+.form-class {
+  width: 35vw;
+  /* height:; */
+  background-color: rgb(41, 50, 58);
+  display: flex;
+  flex-direction: column;
+  /* JUSTIFY-CONTENT: flex-start; */
+  padding: 10px;
+  /* align-items: FLEX-START; */
+  padding: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.error-message {
+  color: red;
+  /* position: absolute; */
+  font-size: x-small;
+  line-height: 10px;
+  height: 10px;
+}
