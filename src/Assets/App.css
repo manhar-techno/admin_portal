@@ -99,7 +99,8 @@ h2 {
   font-size: 14px;
   line-height: 16px;
   padding: 8px 18px;
-  margin: auto;
+  margin: 0px;
+  margin-top: 20px;
 }
 input {
   padding: 3px;
@@ -111,6 +112,7 @@ input {
 }
 .form-elements {
   display: flex;
+  row-gap: 10px;
   flex-direction: column;
   position: relative;
 
@@ -136,13 +138,22 @@ h3 {
   padding: 10px;
   /* align-items: FLEX-START; */
   padding: 20px;
-
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .error-message {
   color: red;
-  /* position: absolute; */
+  position: absolute;
   font-size: x-small;
   line-height: 10px;
   height: 10px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.input-group {
+  position: relative;
+  /* margin: 10px; */
 }

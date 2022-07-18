@@ -55,46 +55,56 @@ export default function RegisterPageOne() {
         {" "}
         <h2>Fill the details</h2>
         <div className="form-elements">
-          <h3>First Name</h3>
-          <input type="text" name="firstName" {...register("firstName")} />
-          <span className="error-message">{errors.firstName?.message}</span>
-          <h3> Last Name</h3>
-          <input
-            type="text"
-            name="lastName"
-            ref={register}
-            {...register("lastName")}
-          />{" "}
-          <span className="error-message">{errors.lastName?.message}</span>
-          <h3>Age</h3>
-          <input type="text" name="age" ref={register} {...register("age")} />
-          <span className="error-message">{errors.age?.message}</span>
-          <h3>Email</h3>
-          <input
-            type="text"
-            name="email"
-            ref={register}
-            {...register("email")}
-          />
-          <span className="error-message">{errors.email?.message}</span>
-          <h3>Password</h3>
-          <input
-            type="password"
-            name="password"
-            ref={register}
-            {...register("password")}
-          />{" "}
-          <span className="error-message">{errors.password?.message}</span>
-          <h3>Confirm-Password</h3>
-          <input
-            type="password"
-            name="confirmPassword"
-            ref={register}
-            {...register("confirmPassword")}
-          />
-          <span className="error-message">
-            {errors.confirmPassword?.message}
-          </span>
+          <div className="input-group">
+            <h3>First Name</h3>
+            <input type="text" name="firstName" {...register("firstName")} />
+            <p className="error-message">{errors.firstName?.message}</p>
+          </div>
+          <div className="input-group">
+            <h3> Last Name</h3>
+            <input
+              type="text"
+              name="lastName"
+              ref={register}
+              {...register("lastName")}
+            />{" "}
+            <p className="error-message">{errors.lastName?.message}</p>
+          </div>
+          <div className="input-group">
+            <h3>Age</h3>
+            <input type="text" name="age" ref={register} {...register("age")} />
+            <p className="error-message">{errors.age?.message}</p>
+          </div>{" "}
+          <div className="input-group">
+            <h3>Email</h3>
+            <input
+              type="text"
+              name="email"
+              ref={register}
+              {...register("email")}
+            />
+            <p className="error-message">{errors.email?.message}</p>
+          </div>
+          <div className="input-group">
+            <h3>Password</h3>
+            <input
+              type="password"
+              name="password"
+              ref={register}
+              {...register("password")}
+            />{" "}
+            <p className="error-message">{errors.password?.message}</p>
+          </div>
+          <div className="input-group">
+            <h3>Confirm-Password</h3>
+            <input
+              type="password"
+              name="confirmPassword"
+              ref={register}
+              {...register("confirmPassword")}
+            />
+            <p className="error-message">{errors.confirmPassword?.message}</p>
+          </div>
         </div>
         <div>
           <button type="submit" className="button-home">
